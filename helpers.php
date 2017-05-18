@@ -33,5 +33,5 @@ function qconf_get_values($path, $idc = null, $flag = null, $default = null)
     if (is_null($config = QConf::getBatchConf($path, $idc, $flag))) {
         return $default;
     }
-    return $default;
+    return $config;
 }
