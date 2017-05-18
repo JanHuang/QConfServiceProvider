@@ -11,11 +11,15 @@
  * @param $path
  * @param null $idc
  * @param null $flag
- * @return string
+ * @param null $default
+ * @return null
  */
-function qconf_get_value($path, $idc = null, $flag = null)
+function qconf_get_value($path, $idc = null, $flag = null, $default = null)
 {
-    return QConf::getConf($path, $idc, $flag);
+    if (is_null($config = QConf::getConf($path, $idc, $flag))) {
+        return $default;
+    }
+    return $config;
 }
 
 /**
@@ -24,7 +28,10 @@ function qconf_get_value($path, $idc = null, $flag = null)
  * @param null $flag
  * @return array
  */
-function qconf_get_values($path, $idc = null, $flag = null)
+function qconf_get_values($path, $idc = null, $flag = null, $default = null)
 {
-    return QConf::getBatchConf($path, $idc, $flag);
+    if (is_null($config = QConf::getBatchConf($path, $idc, $flag))) {
+        return $default;
+    }
+    return $default;
 }
