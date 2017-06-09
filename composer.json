@@ -16,5 +16,10 @@
         "files": [
             "helpers.php"
         ]
+    },
+    "autoload-dev": {
+        "files": [
+            "Qconf.php"
+        ]
     }
 }
