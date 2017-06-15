@@ -14,11 +14,7 @@
             "ServiceProvider\\QConfServiceProvider\\": ""
         },
         "files": [
-            "helpers.php"
-        ]
-    },
-    "autoload-dev": {
-        "files": [
+            "helpers.php",
             "Qconf.php"
         ]
     }
