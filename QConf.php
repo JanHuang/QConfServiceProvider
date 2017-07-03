@@ -4,8 +4,8 @@
  * @email: runnerleer@gmail.com
  * @time: 2017-06
  */
-if (!class_exists('Qconf')) {
-    class Qconf
+if (!class_exists('QConf')) {
+    class QConf
     {
 
         /**
@@ -14,7 +14,7 @@ if (!class_exists('Qconf')) {
          * @param $get_flag
          * @return string|null
          */
-        public function getConf($key, $idc = null, $get_flag = null)
+        public static function getConf($key, $idc = null, $get_flag = null)
         {
             return null;
         }
@@ -25,7 +25,7 @@ if (!class_exists('Qconf')) {
          * @param $get_flag
          * @return string|array|null
          */
-        public function getBatchConf($key, $idc = null, $get_flag = null)
+        public static function getBatchConf($key, $idc = null, $get_flag = null)
         {
             return null;
         }
@@ -36,7 +36,7 @@ if (!class_exists('Qconf')) {
          * @param $get_flag
          * @return string|array|null
          */
-        public function getBatchKeys($key, $idc = null, $get_flag = null)
+        public static function getBatchKeys($key, $idc = null, $get_flag = null)
         {
             return null;
         }
@@ -47,7 +47,7 @@ if (!class_exists('Qconf')) {
          * @param $get_flag
          * @return array|null
          */
-        public function getAllHost($path, $idc = null, $get_flag = null)
+        public static function getAllHost($path, $idc = null, $get_flag = null)
         {
             return null;
         }
@@ -58,7 +58,7 @@ if (!class_exists('Qconf')) {
          * @param $get_flag
          * @return string|null
          */
-        public function getHost($path, $idc = null, $get_flag = null)
+        public static function getHost($path, $idc = null, $get_flag = null)
         {
             return null;
         }
