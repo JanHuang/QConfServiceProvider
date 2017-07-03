@@ -16,6 +16,18 @@ if (!class_exists('Qconf')) {
          */
         public function getConf($key, $idc = null, $get_flag = null)
         {
+            return null;
+        }
+
+        /**
+         * @param $key
+         * @param $idc
+         * @param $get_flag
+         * @return string|array|null
+         */
+        public function getBatchConf($key, $idc = null, $get_flag = null)
+        {
+            return null;
         }
 
         /**
@@ -26,6 +38,7 @@ if (!class_exists('Qconf')) {
          */
         public function getBatchKeys($key, $idc = null, $get_flag = null)
         {
+            return null;
         }
 
         /**
@@ -36,6 +49,7 @@ if (!class_exists('Qconf')) {
          */
         public function getAllHost($path, $idc = null, $get_flag = null)
         {
+            return null;
         }
 
         /**
@@ -46,6 +60,7 @@ if (!class_exists('Qconf')) {
          */
         public function getHost($path, $idc = null, $get_flag = null)
         {
+            return null;
         }
     }
 }
