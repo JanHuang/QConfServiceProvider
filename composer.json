@@ -14,8 +14,7 @@
             "": ""
         },
         "files": [
-            "helpers.php",
-            "Qconf.php"
+            "helpers.php"
         ]
     }
 }
